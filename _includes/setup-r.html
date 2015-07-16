@@ -1,10 +1,10 @@
 <p><strong>Note:</strong> R and RStudio are separate downloads and installations. <strong>R</strong> is the underlying statistical computing environment, but using R alone is no fun. <strong>RStudio</strong> is a graphical integrated development environment that makes using R much easier. You need R installed before you install RStudio.</p>
-<ol start="0" type="1">
+<ol type="1">
 <li><strong>Install R.</strong> You'll need R version 3.2.0 or higher. Download and install R for <a href="http://cran.r-project.org/bin/windows/base/">Windows</a> or <a href="http://cran.r-project.org/bin/macosx/">Mac OS X</a> (download the latest R-3.x.x.pkg file for your appropriate version of OS X).</li>
 <li><strong>Install RStudio.</strong> Download and install the latest stable version of <a href="http://www.rstudio.com/products/rstudio/download/">RStudio Desktop</a>.</li>
 <li><strong>Install R packages.</strong> Launch RStudio (RStudio, <em>not R itself</em>). Ensure that you have internet access, then enter the following commands into the <strong>Console</strong> panel (usually the lower-left panel, by default). Note that these commands are case-sensitive. At any point (especially if you've used R/Bioconductor in the past), R may ask you if you want to update any old packages by asking <code>Update all/some/none? [a/s/n]:</code>. If you see this, type <code>a</code> at the propt and hit <code>Enter</code> to update any old packages. If you're using a Windows machine you might get some errors about not having permission to modify the existing libraries -- don't worry about this message. You can avoid this error altogether by running RStudio as an administrator.</li>
 </ol>
-<pre class="r"><code># Install packages from CRAN
+<pre><code># Install packages from CRAN
 install.packages(&quot;dplyr&quot;)
 install.packages(&quot;ggplot2&quot;)
 install.packages(&quot;tidyr&quot;)
@@ -13,7 +13,7 @@ install.packages(&quot;tidyr&quot;)
 source(&quot;http://bioconductor.org/biocLite.R&quot;)
 biocLite()</code></pre>
 <p>You can check that you've installed everything correctly by closing and reopening RStudio and entering the following commands at the console window:</p>
-<pre class="r"><code>library(dplyr)
+<pre><code>library(dplyr)
 library(ggplot2)
 library(tidyr)
 library(Biobase)</code></pre>
