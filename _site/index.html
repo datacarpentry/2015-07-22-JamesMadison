@@ -2,7 +2,7 @@
 <html>
   <head>
     
-      <title>2015 National Data Integrity Conference at CSU</title>
+      <title>James Madison University</title>
     
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
 <link href="./css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -17,10 +17,10 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-    <meta name="venue" content="2015 National Data Integrity Conference at CSU" />
-    <meta name="date" content="May 5-6, 2015" />
-    <meta name="startdate" content="2015-05-03" />
-    <meta name="enddate" content="2015-05-04" />
+    <meta name="venue" content="James Madison University" />
+    <meta name="date" content="July 22-23, 2015" />
+    <meta name="startdate" content="2015-07-22" />
+    <meta name="enddate" content="2015-07-23" />
   </head>
   <body>
     <div class="container">
@@ -35,12 +35,11 @@
         <div class="hero-unit">
           <div class="row-fluid">
             <div class="span10">
-	      <h2>A Data Carpentry Workshop</h2>
-<!--	      <h4>Organized by Shea Swauger (Colorado State) </h4> -->
-              <h2>2015 National Data Integrity Conference at CSU</h2>
+	      <h2>A Genomics Data Carpentry Workshop</h2>
+              <h2>James Madison University</h2>
               
-              May 5-6, 2015
-              <br/>9:00 am - 4:30 pm
+              July 22-23, 2015
+              <br/>9:00 am - 5:00 pm
 	    </div>
           </div>
         </div>
@@ -56,12 +55,31 @@
 
 
 <h2>General Information</h2>
+<!--
 <p>
-    More information about this workshop is available at: <a href=https://github.com/datacarpentry/2015-05-03-NDIC/wiki>https://github.com/datacarpentry/2015-05-03-NDIC/wiki</a>
+    More information about this workshop is available at: <a href=https://github.com/datacarpentry/2015-05-30-HASTAC/wiki>https://github.com/datacarpentry/2015-05-30-HASTAC/wiki</a>
 </p>
-
+-->
 <p>
-Data Carpentry workshops are for any researcher who has data they want to analyze, and no prior computational experience is required. This hands-on workshop teaches basic concepts, skills and tools for working more effectively with data. We will cover data organization in spreadsheets, data cleaning, SQL, the command line, and R for data analysis and visualization using examples from biology. Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research. 
+Data Carpentry workshops are for any researcher who has data they want to analyze
+, and no prior computational experience is required. This hands-on workshop 
+teaches basic concepts, skills and tools for working more effectively with 
+data. 
+
+<p><b>The focus of this workshop will be on working with genomics data
+and data management and analysis for genomics research.</b> 
+We will cover metadata organization in spreadsheets, connecting to 
+and using cloud computing, the command line for 
+sequence quality control and bioinformatics workflows,
+and R for data analysis and visualization. 
+We will not be teaching any particular bioinformatics tools, but the 
+foundational skills that will allow you to conduct any analysis and
+analyze the output of a genomics pipeline. 
+<p>
+Participants should bring their laptops and plan to participate 
+actively. By the end of the workshop learners should be able to more effectively 
+manage and analyze data and be able to apply the tools and approaches 
+directly to their ongoing research. 
 <p>
 Data Carpentry's aim is to teach researchers basic concepts, skills,
 and tools for working with data so that they can get more done in less
@@ -70,9 +88,9 @@ time, and with less pain.
 <p>
 Preliminary schedule:
 <ul>
-<li>  Day 1 morning: Data organization in spreadsheets and data cleaning withe OpenRefine
-<li>  Day 1 afternoon: Data management in SQL
-<li>  Day 2 morning: Data analysis and visualization in R
+<li>  Day 1 morning: Planning a genomics project and metadata organization
+<li>  Day 1 afternoon: Using cloud computing for bioinformatics
+<li>  Day 2 morning: The command line for bioinformatics
 <li>  Day 2 afternoon: Data analysis and visualization in R
 </ul>
 
@@ -94,11 +112,11 @@ Preliminary schedule:
 
 <p>
   <strong>Organizer:</strong>
-  Shea Swauger (Colorado State)
+  James Herrick (James Madison)
 </p>
 <p>
   <strong>Instructors:</strong>
-  Natalie Robinson (NEON), Tracy Teal (Data Carpentry), Leah Wasser (NEON)
+  Stephen Turner (University of Virginia), Amanda Charbonneau (Michigan State University)
 </p>
 <p>
   <strong>Assistants:</strong>
@@ -147,6 +165,57 @@ Data Carpentry's teaching is hands-on, so participants are encouraged to bring i
 
 <p><strong>Twitter</strong>: #datacarpentry</p> @datacarpentry
 
+<a name="setup"></a>
+
+
+
+<h2>Setup</h2>
+
+<h3>R + Rstudio</h3>
+
+<p><strong>Note:</strong> R and RStudio are separate downloads and installations. <strong>R</strong> is the underlying statistical computing environment, but using R alone is no fun. <strong>RStudio</strong> is a graphical integrated development environment that makes using R much easier. You need R installed before you install RStudio.</p>
+<ol type="1">
+<li><strong>Install R.</strong> You'll need R version 3.2.0 or higher. Download and install R for <a href="http://cran.r-project.org/bin/windows/base/">Windows</a> or <a href="http://cran.r-project.org/bin/macosx/">Mac OS X</a> (download the latest R-3.x.x.pkg file for your appropriate version of OS X).</li>
+<li><strong>Install RStudio.</strong> Download and install the latest stable version of <a href="http://www.rstudio.com/products/rstudio/download/">RStudio Desktop</a>.</li>
+<li><strong>Install R packages.</strong> Launch RStudio (RStudio, <em>not R itself</em>). Ensure that you have internet access, then enter the following commands into the <strong>Console</strong> panel (usually the lower-left panel, by default). Note that these commands are case-sensitive. At any point (especially if you've used R/Bioconductor in the past), R may ask you if you want to update any old packages by asking <code>Update all/some/none? [a/s/n]:</code>. If you see this, type <code>a</code> at the propt and hit <code>Enter</code> to update any old packages. If you're using a Windows machine you might get some errors about not having permission to modify the existing libraries -- don't worry about this message. You can avoid this error altogether by running RStudio as an administrator.</li>
+</ol>
+<pre><code># Install packages from CRAN
+install.packages(&quot;dplyr&quot;)
+install.packages(&quot;ggplot2&quot;)
+install.packages(&quot;tidyr&quot;)
+
+# Install Bioconductor base
+source(&quot;http://bioconductor.org/biocLite.R&quot;)
+biocLite()</code></pre>
+<p>You can check that you've installed everything correctly by closing and reopening RStudio and entering the following commands at the console window:</p>
+<pre><code>library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(Biobase)</code></pre>
+<p>These commands may produce some notes or other output, but as long as they work without an error message, you're good to go. If you get a message that says something like: <code>Error in library(packageName) : there is no package called 'packageName'</code>, then the required packages did not install correctly.</p>
+
+
+<h3>Shell / cloud</h3>
+
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>setup-shell</title></head><body><article class="markdown-body"><p>Most bioinformatics is done on a computer running a Linux/UNIX operating system. In this workshop we will be doing data analysis on a remote linux server rather than on our own laptops. To do that we need: (1) a remote computer set up with all the software we&rsquo;ll need, (2) a way to connect to that computer, and (3) a way to transfer files to and from that computer.</p>
+<p>Since most of us don&rsquo;t have our own Linux server running somewhere, we&rsquo;ll <em>rent</em> a server from Amazon for the duration of this course.</p>
+<!--
+
+**Create AWS account**
+
+First, create an Amazon Web Services account: <http://aws.amazon.com/>. Make sure to register for a Basic (Free) account. You will be required to enter a credit card and billing information -- don't worry, I have free use vouchers for you so you will not be charged. You will need to verify a phone number before you can start using AWS. Note that your Amazon.com account is not connected to your Amazon Web Services account. They are two separate entities with different login and billing information.
+
+Once you have your AWS account set up and can successfully log in to [console.aws.amazon.com](https://console.aws.amazon.com/), email Stephen Turner (<a href="http://www.google.com/recaptcha/mailhide/d?k=01uXi4zl-bIdygzSeXF4649A==&amp;c=_81hv-sTQvJ9rjELjZNDJeAXTvLvkpfD9KEuItpEHTE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501uXi4zl-bIdygzSeXF4649A\75\75\46c\75_81hv-sTQvJ9rjELjZNDJeAXTvLvkpfD9KEuItpEHTE\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">sd...</a>@virginia.edu) to obtain a voucher to be able to use AWS for free during and after our course. Use the subject line "RNA-SEQ COURSE AWS VOUCHER" in your email to me. Once you have your voucher, return to the AWS console, click your name at the top right, click "Billing & Cost Management", then on the left, click "Credits". Redeem the promo code I sent you -- this credit will buy enough compute time to complete this workshop and for several future RNA-seq analyses.
+
+If you're interested in trying out EC2 prior to the workshop, watch [this short video](http://youtu.be/SKM0BB0F02Q) to learn how to launch your first instance (and make sure to stop the instance after you're done). Whether you do this or not, *be sure to stop or terminate any running EC2 instances when you are done with them*. After the course, you may deactivate your AWS account if you wish under the "My Account" settings in the AWS console.
+
+-->
+
+<p><strong>Download a terminal emulator (Windows only).</strong> Skip this step if you&rsquo;re using a Mac &ndash; you already have a terminal that you can access by typing &ldquo;Terminal&rdquo; into Spotlight, or navigating to Applications -&gt; Utilities -&gt; Terminal. If you&rsquo;re using Windows you&rsquo;ll need a terminal emulator. <a href="http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe">Download the latest version of PuTTY here</a>. Ensure that you can run this .exe file (no installation necessary).</p>
+<p><strong>Download a file transfer program.</strong> Download and install Cyberduck (free): <a href="https://cyberduck.io">https://cyberduck.io</a>. We will use this transfer files back and forth between our local laptops and our remote linux server running on Amazon. Note: If using a Mac, download from the website above (free), <em>not</em> from the Mac App Store (paid).</p>
+<p><strong>Download a text editor.</strong> We may wish to view and/or edit plain text files. To do this, let&rsquo;s use a better alternative to the built-in Notepad (Windows) or TextEdit (Mac). Download and install Sublime Text (works for Windows and Mac): <a href="http://www.sublimetext.com/">http://www.sublimetext.com/</a>. </p></article></body></html>
+
+
 
 <h2>Acknowledgements &amp; Support</h2>
 <!--
@@ -154,7 +223,8 @@ Data Carpentry's teaching is hands-on, so participants are encouraged to bring i
 </div>
 -->
 <p>
-Data Carpentry is supported by the <a href=http://http://www.moore.org/>Gordon and Betty Moore Foundation</a> and a partnership of several NSF-funded <a href="http://www.nsf.gov/dir/index.jsp?org=BIO" target="_blank">BIO</a> Centers (<a href="http://nescent.org" target="_blank">NESCent</a>, <a href="http://iplantcollaborative.org" target="_blank">iPlant</a>, <a href="http://idigbio.org" target="_blank">iDigBio</a>, <a href="http://beacon-center.org/" target="_blank">BEACON</a> and <a href="http://sesync.org" target="_blank">SESYNC</a>) and <a href="http://software-carpentry.org" target="_blank">Software Carpentry</a>, and is sponsored by the <a href="http://dataone.org" target="_blank">Data Observation Network for Earth</a> (DataONE). The structure and objectives of the curriculum as well as the teaching style are informed by <a href="http://software-carpentry.org" target="_blank">Software Carpentry</a>.
+Data Carpentry is supported by the <a href=http://http://www.moore.org/>Gordon and Betty Moore Foundation</a> and a partnership of several NSF-funded <a href="http://www.nsf.gov/dir/index.jsp?org=BIO" target="_blank">BIO</a> Centers (<a href="http://nescent.org" target="_blank">NESCent</a>, <a href="http://iplantcollaborative.org" target="_blank">iPlant</a>, <a href="http://idigbio.org" target="_blank">iDigBio</a>, <a href="http://beacon-center.org/" target="_blank">BEACON</a> and <a href="http://sesync.org" target="_blank">SESYNC</a>) and <a href="http://software-carpentry.org" target="_blank">Software Carpentry</a>. 
+The structure and objectives of the curriculum as well as the teaching style are informed by <a href="http://software-carpentry.org" target="_blank">Software Carpentry</a>.
 </p>
 
 
@@ -230,7 +300,7 @@ Data Carpentry is supported by the <a href=http://http://www.moore.org/>Gordon a
 <li><a href=http://rgm3.lab.nig.ac.jp/RGM/R_image_list?page=665&init=true>R Graphical Manual</a> - plots from apparently every R CRAN package
 </ul>
 -->
-
+<!--
 <h2>Setup</h2>
 
 <p>
@@ -245,7 +315,7 @@ Participants should bring and use their own laptops to insure the proper setup o
 Please follow these <a href=install.html><b>Setup Instructions</b></a>  
   
 </p>
-
+-->
 
 
 
