@@ -1,9 +1,11 @@
 
-2015-05-03-NDIC
+2015-07-22-James-Madison
 ==================
 
-Data Carpentry workshop
-2015 National Data Integrity Conference at CSU
+Genomics Data Carpentry workshop at James Madison University
+
+Workshop website: http://datacarpentry.github.io/2015-07-22-JamesMadison/
+
 
 
 
