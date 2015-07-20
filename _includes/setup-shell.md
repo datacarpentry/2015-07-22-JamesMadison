@@ -14,8 +14,8 @@ If you're interested in trying out EC2 prior to the workshop, watch [this short 
 
 -->
 
-**Download a terminal emulator (Windows only).** Skip this step if you're using a Mac -- you already have a terminal that you can access by typing "Terminal" into Spotlight, or navigating to Applications -> Utilities -> Terminal. If you're using Windows you'll need a terminal emulator. [Download the latest version of PuTTY here](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). Ensure that you can run this .exe file (no installation necessary).
-
-**Download a file transfer program.** Download and install Cyberduck (free): <https://cyberduck.io>. We will use this transfer files back and forth between our local laptops and our remote linux server running on Amazon. Note: If using a Mac, download from the website above (free), *not* from the Mac App Store (paid).
-
-**Download a text editor.** We may wish to view and/or edit plain text files. To do this, let's use a better alternative to the built-in Notepad (Windows) or TextEdit (Mac). Download and install Sublime Text (works for Windows and Mac): <http://www.sublimetext.com/>. 
+- **Download a terminal emulator (Windows only).** Skip this step if you're using a Mac -- you already have a terminal that you can access by typing "Terminal" into Spotlight, or navigating to Applications -> Utilities -> Terminal. If you're using Windows you'll need a terminal emulator and a key generation utility. Windows instructions:
+    - [Download the latest version of PuTTY here](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). Ensure that you can run this .exe file (no installation necessary). This is your terminal emulator.
+    - [Download puttygen here](http://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe). This will allow you to generate a key used to log in to your cloud computing instance.
+- **Download a file transfer program.** Download and install Cyberduck (free): <https://cyberduck.io>. We will use this transfer files back and forth between our local laptops and our remote linux server running on Amazon. Note: If using a Mac, download from the website above (free), *not* from the Mac App Store (paid).
+- **Download a text editor.** We may wish to view and/or edit plain text files. To do this, let's use a better alternative to the built-in Notepad (Windows) or TextEdit (Mac). Download and install Sublime Text (works for Windows and Mac): <http://www.sublimetext.com/>. 
