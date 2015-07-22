@@ -1,8 +1,10 @@
-<p><strong>Note:</strong> R and RStudio are separate downloads and installations. <strong>R</strong> is the underlying statistical computing environment, but using R alone is no fun. <strong>RStudio</strong> is a graphical integrated development environment that makes using R much easier. You need R installed before you install RStudio.</p>
-<ol type="1">
-<li><strong>Install R.</strong> You'll need R version 3.2.0 or higher. Download and install R for <a href="http://cran.r-project.org/bin/windows/base/">Windows</a> or <a href="http://cran.r-project.org/bin/macosx/">Mac OS X</a> (download the latest R-3.x.x.pkg file for your appropriate version of OS X).</li>
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>setup-r</title></head><body><article class="markdown-body"><p><strong>Note:</strong> R and RStudio are separate downloads and installations. <strong>R</strong> is the underlying statistical computing environment, but using R alone is no fun. <strong>RStudio</strong> is a graphical integrated development environment that makes using R much easier. You need R installed before you install RStudio.</p>
+<ol>
+<li><strong>Download the gapminder data.</strong> <a href="http://bioconnector.org/data/gapminder.csv">Click here to download the data</a> that we will use for this section. Save it somewhere you&rsquo;ll remember.</li>
+<li><strong>Install R.</strong> You&rsquo;ll need R version 3.2.0 or higher. Download and install R for <a href="http://cran.r-project.org/bin/windows/base/">Windows</a> or <a href="http://cran.r-project.org/bin/macosx/">Mac OS X</a> (download the latest R-3.x.x.pkg file for your appropriate version of OS X).</li>
 <li><strong>Install RStudio.</strong> Download and install the latest stable version of <a href="http://www.rstudio.com/products/rstudio/download/">RStudio Desktop</a>.</li>
-<li><strong>Install R packages.</strong> Launch RStudio (RStudio, <em>not R itself</em>). Ensure that you have internet access, then enter the following commands into the <strong>Console</strong> panel (usually the lower-left panel, by default). Note that these commands are case-sensitive. At any point (especially if you've used R/Bioconductor in the past), R may ask you if you want to update any old packages by asking <code>Update all/some/none? [a/s/n]:</code>. If you see this, type <code>a</code> at the propt and hit <code>Enter</code> to update any old packages. If you're using a Windows machine you might get some errors about not having permission to modify the existing libraries -- don't worry about this message. You can avoid this error altogether by running RStudio as an administrator.</li>
+<li><strong>Install R packages.</strong> Launch RStudio (RStudio, <em>not R itself</em>). Ensure that you have internet access, then enter the following commands into the <strong>Console</strong> panel (usually the lower-left panel, by default). Note that these commands are case-sensitive. At any point (especially if you&rsquo;ve used R/Bioconductor in the past), R may ask you if you want to update any old packages by asking <code>Update all/some/none? [a/s/n]:</code>. If you see this, type <code>a</code> at the propt and hit <code>Enter</code> to update any old packages. If you&rsquo;re using a Windows machine you might get some errors about not having permission to modify the existing libraries &ndash; don&rsquo;t worry about this message. You can avoid this error altogether by running RStudio as an administrator.</li>
+<li><strong>Download the data.</strong> <a href="etc/gapminder.csv">Click here to download the data</a> that we will use for the R lesson. Save it somewhere easy to remember and fine e.g., your Desktop. <em>(Alternative data source: <a href="http://bioconnector.org/data/gapminder.csv">http://bioconnector.org/data/gapminder.csv</a>)</em>.</li>
 </ol>
 <pre><code># Install packages from CRAN
 install.packages(&quot;dplyr&quot;)
@@ -11,10 +13,14 @@ install.packages(&quot;tidyr&quot;)
 
 # Install Bioconductor base
 source(&quot;http://bioconductor.org/biocLite.R&quot;)
-biocLite()</code></pre>
-<p>You can check that you've installed everything correctly by closing and reopening RStudio and entering the following commands at the console window:</p>
+biocLite()
+</code></pre>
+
+<p>You can check that you&rsquo;ve installed everything correctly by closing and reopening RStudio and entering the following commands at the console window:</p>
 <pre><code>library(dplyr)
 library(ggplot2)
 library(tidyr)
-library(Biobase)</code></pre>
-<p>These commands may produce some notes or other output, but as long as they work without an error message, you're good to go. If you get a message that says something like: <code>Error in library(packageName) : there is no package called 'packageName'</code>, then the required packages did not install correctly.</p>
+library(Biobase)
+</code></pre>
+
+<p>These commands may produce some notes or other output, but as long as they work without an error message, you&rsquo;re good to go. If you get a message that says something like: <code>Error in library(packageName) : there is no package called 'packageName'</code>, then the required packages did not install correctly.</p></article></body></html>

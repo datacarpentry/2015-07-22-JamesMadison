@@ -37,7 +37,7 @@
             <div class="span10">
 	      <h2>A Genomics Data Carpentry Workshop</h2>
               <h2>James Madison University</h2>
-              
+              Bioscience Building, room 2007<br/>
               July 22-23, 2015
               <br/>9:00 am - 5:00 pm
 	    </div>
@@ -86,6 +86,7 @@ and tools for working with data so that they can get more done in less
 time, and with less pain.
 </p>
 <p>
+<!--
 Preliminary schedule:
 <ul>
 <li>  Day 1 morning: Planning a genomics project and metadata organization
@@ -93,6 +94,8 @@ Preliminary schedule:
 <li>  Day 2 morning: The command line for bioinformatics
 <li>  Day 2 afternoon: Using cloud computing for bioinformatics
 </ul>
+
+-->
 
 
 </p>
@@ -114,7 +117,7 @@ Preliminary schedule:
 
 <p>
   <strong>Organizer:</strong>
-  James Herrick (James Madison)
+  James Herrick (James Madison), Ray Enke (James Madison), Steve Cresawn (James Madison)
 </p>
 <p>
   <strong>Instructors:</strong>
@@ -140,6 +143,15 @@ Preliminary schedule:
     This block displays the address and links to a map showing directions.
 -->
 
+<p>
+  <strong>Where:</strong>
+  Bioscience Building, room 2007.
+  Get directions with
+  <a href="http://www.openstreetmap.org/?mlat=38.4338888&mlon=-78.8605821&zoom=16">OpenStreetMap</a>
+  or
+  <a href="http://maps.google.com/maps?q=38.4338888,-78.8605821">Google Maps</a>. 
+</p>
+
 
 <!--
     Modify the block below if there are any special requirements.
@@ -148,7 +160,7 @@ Preliminary schedule:
 
 <p>
   <strong>Requirements:</strong>
-Data Carpentry's teaching is hands-on, so participants are encouraged to bring in and use their own laptops to insure the proper setup of tools for an efficient workflow once you leave the workshop.  (We will provide instructions on setting up the required software several days in advance, and the classroom will have computers with the software installed). <em> There are no pre-requisites, and we will assume no prior knowledge about the tools.</em> Participants are required to abide by Software Carpentry's
+Data Carpentry's teaching is hands-on, so participants are encouraged to bring in and use their own laptops to insure the proper setup of tools for an efficient workflow once you leave the workshop.  (We will provide instructions on setting up the required software several days in advance.). <em> There are no pre-requisites, and we will assume no prior knowledge about the tools.</em> Participants are required to abide by Software Carpentry's
 <a href="http://software-carpentry.org/conduct.html">Code of Conduct</a>.
 </p>
 
@@ -169,17 +181,50 @@ Data Carpentry's teaching is hands-on, so participants are encouraged to bring i
 
 <a name="setup"></a>
 
+<!--
+    Edit this block to show the syllabus and schedule for your bootcamp.
+-->
+
+<h2>Schedule</h2>
+<table class="table table-striped">
+  <tr> <td>Wednesday</td>  <td>08:30</td>  <td>Breakfast, and optional help with setup prior to starting</td> </tr>
+  <tr> <td></td>        <td>09:00</td>       <td> Data organization and management (Amanda)</td> </tr>
+  <tr> <td></td>        <td></td>       <td>Refreshments will be served around 10:30.</td> </tr>
+  <tr> <td></td>        <td>10:45</td>       <td> Working with genomics file types (Amanda)</td> </tr>  
+  <tr> <td></td>        <td>12:30</td>  <td>Lunch break </td> </tr>
+  <tr> <td></td>        <td>13:30</td>  <td> Introduction to R (Stephen)</td> </tr>
+  <tr> <td></td>        <td></td>       <td>Refreshments will be served around 15:00.</td> </tr>
+  <tr> <td></td>        <td>15:15</td>  <td> Advanced manipulation & visualization with R (Stephen) </td> </tr>  
+  <tr> <td></td>        <td>16:30</td>  <td>Wrap-up</td> </tr>
+  <tr> <td></td>        <td>17:00</td>  <td>Evening Mixer (5pm to 7pm)</td> </tr>
+  <tr> <td>Thursday</td>  <td>08:30</td>  <td>Breakfast, and optional help with setup prior to starting</td> </tr>
+  <tr> <td></td>        <td>09:00</td>  <td> Introduction to command line (Amanda)</td> </tr>
+  <tr> <td></td>        <td></td>       <td>Refreshments will be served around 10:30.</td> </tr>
+  <tr> <td></td>        <td>10:45</td>       <td>Wrangling and processing genomic data-Advanced shell (Amanda)</td> </tr>  
+  <tr> <td></td>        <td>12:30</td>  <td>Lunch break </td> </tr>
+  <tr> <td></td>        <td>13:30</td>  <td> Introduction to cloud computing (Stephen) </td> </tr>
+  <tr> <td></td>        <td></td>       <td>Refreshments will be served around 15:00.</td> </tr>
+  <tr> <td></td>        <td>15:15</td>  <td> Cloud computing: example analysis & data transfer (Stephen) </td> </tr>    
+  <tr> <td></td>        <td>16:30</td>  <td>Wrap-up</td> </tr>
+  <tr> <td></td>        <td>17:00</td>  <td>Evening Mixer (5pm to 7pm)</td> </tr>
+</table>
+
+<hr/>
+
+
 
 
 <h2>Setup</h2>
 
 <h3>R + Rstudio</h3>
 
-<p><strong>Note:</strong> R and RStudio are separate downloads and installations. <strong>R</strong> is the underlying statistical computing environment, but using R alone is no fun. <strong>RStudio</strong> is a graphical integrated development environment that makes using R much easier. You need R installed before you install RStudio.</p>
-<ol type="1">
-<li><strong>Install R.</strong> You'll need R version 3.2.0 or higher. Download and install R for <a href="http://cran.r-project.org/bin/windows/base/">Windows</a> or <a href="http://cran.r-project.org/bin/macosx/">Mac OS X</a> (download the latest R-3.x.x.pkg file for your appropriate version of OS X).</li>
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>setup-r</title></head><body><article class="markdown-body"><p><strong>Note:</strong> R and RStudio are separate downloads and installations. <strong>R</strong> is the underlying statistical computing environment, but using R alone is no fun. <strong>RStudio</strong> is a graphical integrated development environment that makes using R much easier. You need R installed before you install RStudio.</p>
+<ol>
+<li><strong>Download the gapminder data.</strong> <a href="http://bioconnector.org/data/gapminder.csv">Click here to download the data</a> that we will use for this section. Save it somewhere you&rsquo;ll remember.</li>
+<li><strong>Install R.</strong> You&rsquo;ll need R version 3.2.0 or higher. Download and install R for <a href="http://cran.r-project.org/bin/windows/base/">Windows</a> or <a href="http://cran.r-project.org/bin/macosx/">Mac OS X</a> (download the latest R-3.x.x.pkg file for your appropriate version of OS X).</li>
 <li><strong>Install RStudio.</strong> Download and install the latest stable version of <a href="http://www.rstudio.com/products/rstudio/download/">RStudio Desktop</a>.</li>
-<li><strong>Install R packages.</strong> Launch RStudio (RStudio, <em>not R itself</em>). Ensure that you have internet access, then enter the following commands into the <strong>Console</strong> panel (usually the lower-left panel, by default). Note that these commands are case-sensitive. At any point (especially if you've used R/Bioconductor in the past), R may ask you if you want to update any old packages by asking <code>Update all/some/none? [a/s/n]:</code>. If you see this, type <code>a</code> at the propt and hit <code>Enter</code> to update any old packages. If you're using a Windows machine you might get some errors about not having permission to modify the existing libraries -- don't worry about this message. You can avoid this error altogether by running RStudio as an administrator.</li>
+<li><strong>Install R packages.</strong> Launch RStudio (RStudio, <em>not R itself</em>). Ensure that you have internet access, then enter the following commands into the <strong>Console</strong> panel (usually the lower-left panel, by default). Note that these commands are case-sensitive. At any point (especially if you&rsquo;ve used R/Bioconductor in the past), R may ask you if you want to update any old packages by asking <code>Update all/some/none? [a/s/n]:</code>. If you see this, type <code>a</code> at the propt and hit <code>Enter</code> to update any old packages. If you&rsquo;re using a Windows machine you might get some errors about not having permission to modify the existing libraries &ndash; don&rsquo;t worry about this message. You can avoid this error altogether by running RStudio as an administrator.</li>
+<li><strong>Download the data.</strong> <a href="etc/gapminder.csv">Click here to download the data</a> that we will use for the R lesson. Save it somewhere easy to remember and fine e.g., your Desktop. <em>(Alternative data source: <a href="http://bioconnector.org/data/gapminder.csv">http://bioconnector.org/data/gapminder.csv</a>)</em>.</li>
 </ol>
 <pre><code># Install packages from CRAN
 install.packages(&quot;dplyr&quot;)
@@ -188,14 +233,17 @@ install.packages(&quot;tidyr&quot;)
 
 # Install Bioconductor base
 source(&quot;http://bioconductor.org/biocLite.R&quot;)
-biocLite()</code></pre>
-<p>You can check that you've installed everything correctly by closing and reopening RStudio and entering the following commands at the console window:</p>
+biocLite()
+</code></pre>
+
+<p>You can check that you&rsquo;ve installed everything correctly by closing and reopening RStudio and entering the following commands at the console window:</p>
 <pre><code>library(dplyr)
 library(ggplot2)
 library(tidyr)
-library(Biobase)</code></pre>
-<p>These commands may produce some notes or other output, but as long as they work without an error message, you're good to go. If you get a message that says something like: <code>Error in library(packageName) : there is no package called 'packageName'</code>, then the required packages did not install correctly.</p>
+library(Biobase)
+</code></pre>
 
+<p>These commands may produce some notes or other output, but as long as they work without an error message, you&rsquo;re good to go. If you get a message that says something like: <code>Error in library(packageName) : there is no package called 'packageName'</code>, then the required packages did not install correctly.</p></article></body></html>
 
 <h3>Shell / cloud</h3>
 
@@ -214,7 +262,7 @@ If you're interested in trying out EC2 prior to the workshop, watch [this short 
 -->
 
 <ul>
-<li><strong>(<em>All participants</em>) Download a file transfer program.</strong> Download and install Cyberduck (free): <a href="https://cyberduck.io">https://cyberduck.io</a>. We will use this transfer files back and forth between our local laptops and our remote linux server running on Amazon. Note: If using a Mac, download from the website above (free), <em>not</em> from the Mac App Store (paid).</li>
+<li><strong>(<em>All participants</em>) Download a file transfer program.</strong> Download and install Cyberduck (free): <a href="https://cyberduck.io">https://cyberduck.io</a>. We will use this transfer files back and forth between our local laptops and our remote linux server running on Amazon. Note: If using a Mac, download from the website above (free), <em>not</em> from the Mac App Store (paid). </li>
 <li><strong>(<em>All participants</em>) Download a text editor.</strong> We may wish to view and/or edit plain text files. To do this, let&rsquo;s use a better alternative to the built-in Notepad (Windows) or TextEdit (Mac). Download and install Sublime Text (works for Windows and Mac): <a href="http://www.sublimetext.com/">http://www.sublimetext.com/</a>. </li>
 <li><strong><em>For Windows users only</em></strong>:<ul>
 <li><strong>Install git-bash</strong>. Download and run <a href="http://msysgit.github.io/">the installer here</a>. This will install a &ldquo;real&rdquo; command line on a Windows machine.</li>
@@ -224,6 +272,12 @@ If you're interested in trying out EC2 prior to the workshop, watch [this short 
 <li><a href="http://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe">Download puttygen here</a>. This will allow you to generate a key used to log in to your cloud computing instance.</li>
 </ul>
 </li>
+</ul>
+</li>
+<li><strong>Bookmark these links</strong>: These resources will be useful for logging in and transferring data to your instance.<ul>
+<li><a href="http://angus.readthedocs.org/en/2014/amazon/transfer-files-between-instance.html">Transferring data between your computer and your EC2 instance</a></li>
+<li><a href="http://angus.readthedocs.org/en/2014/amazon/log-in-with-ssh-win.html">Logging on to your instance for windows</a></li>
+<li><a href="http://angus.readthedocs.org/en/2014/amazon/log-in-with-ssh-mac.html">Logging on to your instance for Mac</a></li>
 </ul>
 </li>
 </ul></article></body></html>
@@ -242,29 +296,6 @@ The structure and objectives of the curriculum as well as the teaching style are
 
 
 
-
-<!--
-    Edit this block to show the syllabus and schedule for your bootcamp.
--->
-<!--
-<h2>Schedule</h2>
-(anticipate)
-<table class="table table-striped">
-  <tr> <td>Thursday</td>  <td>09:00</td>  <td><a href = "lessons/excel/ecology-examples/00-intro.html">Better Use of Spreadsheets</a></td> </tr>
-  <tr> <td></td>        <td></td>       <td>Refreshments will be served around 10:30.</td> </tr>
-  <tr> <td></td>        <td>12:00</td>  <td>Lunch break (on your own)</td> </tr>
-  <tr> <td></td>        <td>13:00</td>  <td>Cleaning and managing data with <a href="lessons/OpenRefine/open-refine-demo.html">OpenRefine</a>, <a href="lessons/sql/sql.html">Introduction to relational databases with SQLite</a> </td> </tr>
-  <tr> <td></td>        <td></td>       <td>Refreshments will be served around 14:30.</td> </tr>
-  <tr> <td></td>        <td>16:00</td>  <td>Wrap-up</td> </tr>
-  <tr> <td>Friday</td> <td>09:00</td>  <td> <a href="lessons/R/index.html"> Working with data in R </a></td> </tr>
-  <tr> <td></td>        <td></td>       <td>Refreshments will be served around 10:30.</td> </tr>
-  <tr> <td></td>        <td>12:00</td>  <td>Lunch break (on your own)</td> </tr>
-  <tr> <td></td>        <td>13:00</td>  <td> <a href = "lessons/shell/index.html">Workflows and automating repetitive tasks with command line shell </a>  </td> </tr>
-  <tr> <td></td>        <td></td>       <td>Refreshments will be served around 14:30.</td> </tr>
-  <tr> <td></td>        <td>16:00</td>  <td>Wrap-up</td> </tr>
-</table>
--->
-<hr/>
 
 <!--
     Edit the setup instructions in _includes/setup.html to reflect your bootcamp.
