@@ -1,6 +1,8 @@
 ---
 layout: lesson
+root: ..
 --- 
+
 
 # Data Carpentry: Using R for Exploring, Manipulating, and Visualizing Data
 
